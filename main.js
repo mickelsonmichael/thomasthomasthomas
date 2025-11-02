@@ -6,8 +6,10 @@ function printError(error) {
     console.error(error);
 
     const errorElement = document.querySelector(`.${ERROR_CLASS}`);
+    const loaderElement = document.querySelector(`.${LOADER_CLASS}`);
 
     errorElement.innerHTML = error;
+    loaderElement.classList.remove("show");
     errorElement.classList.add("show");
 }
 
