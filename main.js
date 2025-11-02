@@ -26,7 +26,7 @@ function renderMovies(movies) {
 }
 
 function loadMovies() {
-    fetch(`/${MOVIES_FILE_NAME}`)
+    fetch(`./${MOVIES_FILE_NAME}`)
         .then(res => res.json())
         .then(renderMovies)
         .catch(printError);
