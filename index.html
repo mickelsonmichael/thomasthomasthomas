@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Thomas Watch This</title>
-        <link rel="stylesheet" href="./main.css" />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="main">
+
+<head>
+    <title>Thomas Watch This</title>
+    <link rel="stylesheet" href="./main.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <span id="to-movies" class="type-button selected" onclick="switchTo('movies')">Movies</span>
+            <span id="to-shows" class="type-button" onclick="switchTo('shows')">TV Shows</span>
+        </div>
+        <div class="middle">
             <div class="banner">What should Thomas watch next?</div>
             <div class="loader show"></div>
             <div class="error">
                 Some error message
                 <!--Error is empty and will be filled in main.js-->
             </div>
-            <div class="movie">
-                <!--Movies loaded by main.js-->
+            <div class="highlight">
+                <!--Movies/Shows loaded by main.js-->
             </div>
         </div>
-        <script src="./main.js"></script>
-    </body>
+        <div class="bottom">
+            <div class="more">
+                ⇃ Scroll for More ⇂
+            </div>
+        </div>
+
+    </div>
+    <div class="lower">
+        <ul class="list"></ul>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
 </html>
